@@ -1,0 +1,112 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#141E30,#243B55);
+    color:white;
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.title{
+    font-size:25px;
+    animation:fadeIn 1.5s ease-in-out;
+}
+
+.subtitle{
+    margin:20px 0;
+    font-size:18px;
+    opacity:0.8;
+    animation:fadeIn 1.5s ease-in-out;
+
+}
+
+.btn{
+    padding:12px 25px;
+    background:#00c6ff;
+    border-radius:30px;
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#0072ff;
+    transform:scale(1.1);
+}
+
+/* MEMBERS */
+
+.members-section{
+    padding:80px 40px;
+    text-align:center;
+}
+
+.members-section h2{
+    margin-bottom:50px;
+    font-size:32px;
+}
+
+.members-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+.card{
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(10px);
+    border-radius:20px;
+    padding:20px;
+    width:200px;
+    transition:0.4s;
+     border:3px solid rgb(16, 32, 216);
+    box-shadow:0 0 25px rgb(5, 23, 225);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:15px;
+}
+
+/* PRINCIPAL MEMBERS */
+
+.principal{
+    border:3px solid gold;
+    box-shadow:0 0 25px gold;
+}
+
+/* ANIMATION */
+
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(30px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+    .title{font-size:30px;}
+    .card{width:150px;}
+}
