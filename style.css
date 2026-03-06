@@ -97,8 +97,8 @@ body{
 }
 
 .card img{
-    width:150px;
-    height:190px;
+    width:100px;
+    height:140px;
     border-radius:50%;
     object-fit:cover;
     margin-bottom:15px;
@@ -123,4 +123,5 @@ body{
 @media(max-width:768px){
     .title{font-size:30px;}
     .card{width:150px;}
+
 }
